@@ -25,6 +25,7 @@ Use Following payload to receive DNS request from the vulnerable application.
 "val": "asdfasdfasdf.burpcollaborator.net"
 }
 ```
+<img src="/screenshot/ssrf-payload.png">
 
 Credits:
 https://github.com/vulhub/vulhub/tree/master/fastjson
