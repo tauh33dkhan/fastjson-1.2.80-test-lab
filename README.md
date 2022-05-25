@@ -6,7 +6,7 @@
 docker build --network=host --no-cache .
 ```
 
-How to know if the targert application is using **fastjson**?
+## How to know if the targert application is using **fastjson**?
 
 - Send Invalid JSON data and application will return 400 response exposing fastjson use in error message.
 <img src="/screenshot/invalid-json-400-response.png">
