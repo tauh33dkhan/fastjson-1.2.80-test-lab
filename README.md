@@ -15,9 +15,6 @@ docker build --network=host --no-cache .
 ```
 <img src="/screenshot/invalid-json-400-response.png">
 
-Credits:
-https://github.com/vulhub/vulhub/tree/master/fastjson
-
 ## Exploit Payload
 
 Use Following payload to receive DNS request from the vulnerable application.
@@ -28,3 +25,7 @@ Use Following payload to receive DNS request from the vulnerable application.
 "val": "asdfasdfasdf.burpcollaborator.net"
 }
 ```
+
+Credits:
+https://github.com/vulhub/vulhub/tree/master/fastjson
+
