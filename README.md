@@ -124,7 +124,7 @@ payload7:
 ## How to protect against this attack
 
 - Follow advisory released by the vendor https://github.com/alibaba/fastjson/wiki/security_update_20220523
-- Enable safeMode in fastjson which completely disables autoType,
+- Enable safeMode in fastjson which completely disables autoType.
 - If you for some reason cannot make changes in code and need some time in that case you can configure firewall to block all requests that contains <b>@type</b> in request body because fastjson automatically map the value of key: value of json to the class corresponding to <b>@type</b>.
 
 
