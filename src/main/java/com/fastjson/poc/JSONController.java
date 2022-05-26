@@ -1,5 +1,5 @@
 package com.fastjson.poc;
-
+import com.alibaba.fastjson.parser.ParserConfig;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +22,7 @@ public class JSONController {
 	  @ResponseBody
 	  public Object setUser(@RequestBody User user)
 	  {
+		ParserConfig.getGlobalInstance().setAutoTypeSupport(true);
 	    user.setAge(Integer.valueOf(20));
 	    return user;
 	  }
